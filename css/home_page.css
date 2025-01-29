@@ -39,8 +39,8 @@
             margin: 20px;
         }
         .profile img {
-            width: 700px;
-            height: 70px;
+            min-width: none;
+            min-height: 100%;
             border-radius: 100%;
         }
         .menu {
