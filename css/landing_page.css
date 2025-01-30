@@ -1,81 +1,72 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background: #f9f9f9;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            background: white;
-            padding: 15px 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .header img {
-            height: 50px;
-        }
-        .login-button {
-            background: green;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-left: auto;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 5px 5px 5px rgba(18, 5, 5, 0.1);
-            
-        }
-        .title {
-            margin-bottom: 20px;
-            margin-left: 20px;
-        }
-        .image-container {
-            display: flex;
-            max-width: 55%;
-            margin-bottom: 20px;
-            margin-left: auto;
-            
-        }
-        .image-container img {
-            width: 100%;
-            max-height: 350px;
-            object-fit: cover;
-        }
-        .links {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .links div {
-            flex: 1;
-            background: white;
-            padding: 20px;
-            text-align: center;
-            margin: 0 10px;
-            box-shadow: 5px 5px 5px rgba(55, 26, 26, 0.1);
-        }
-        .about {
-            text-align: justify;
-            margin-bottom: 20px;
-        }
-        .footer {
-            background: #ddd;
-            padding: 20px;
-            text-align: center;
-        }
-        .map-container {
-            background: #ccc;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    background: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 100%;
+}
+.hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    
+}
+.overlay {
+    background: url('/assets/Semarang City Hall.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 200px 0px 0px 75px;
+}
+.content {
+    padding: 70px;
+    text-align: left;
+    z-index: 2;
+}
+.login-btn {
+    background: red;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.partners {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: 200px 100px 0px 100px;
+    box-shadow: 5px 5px 10px rgba(70, 59, 59, 0.3), -5px -5px 10px rgba(93, 78, 78, 0.3);
+    transform: translatey(-85px);
+}
+.partners img {
+    max-width: 100%;
+    height: 70px;
+}
+.information {
+    text-align: center;
+    padding: 40px 20px;
+    justify-content: center;
+    padding: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: 0px 100px 50px 100px;
+    box-shadow: 5px 5px 10px rgba(70, 59, 59, 0.3), -5px -5px 10px rgba(93, 78, 78, 0.3);
+}
+footer {
+    background: #002147;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px 30px 0px 0px
+}
