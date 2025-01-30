@@ -33,6 +33,7 @@
             width: 100%;
             flex-direction: row;
             align-items: center;
+            padding: 1px;
         }
         .profile {
             text-align: center;
@@ -74,13 +75,13 @@
         .header {
             width: 100%;
             background: #0846A9;
-            padding: 20px;
+            padding: 21px;
             text-align: right;
             font-size: 14px;
             color: white;
         }
 
         .content h1{
-            
+            margin: 30px;
 
         }
