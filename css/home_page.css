@@ -10,7 +10,7 @@
         }
         .sidebar {
             width: 250px;
-            background: #1f3b67;
+            background: white;
             color: white;
             display: flex;
             flex-direction: column;
@@ -29,14 +29,17 @@
         }
         .sidebar .content1{
             display: flex;
-            background: #f15a24;
+            background: #0846A9;
             width: 100%;
             flex-direction: row;
             align-items: center;
+            padding: 1px;
         }
         .profile {
             text-align: center;
             margin: 20px;
+            color: black;
+            padding-bottom: 20px;
         }
         .profile img {
             min-width: none;
@@ -49,7 +52,7 @@
         .menu a {
             display: block;
             padding: 10px;
-            color: white;
+            color: black;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -68,12 +71,17 @@
         }
         .content img {
             width: 500px;
-            margin: 20px 0;
         }
         .header {
             width: 100%;
-            background: #f7d89c;
-            padding: 20px;
+            background: #0846A9;
+            padding: 21px;
             text-align: right;
             font-size: 14px;
+            color: white;
+        }
+
+        .content h1{
+            margin: 30px;
+
         }
