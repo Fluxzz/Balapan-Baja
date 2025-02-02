@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kelola User</title>
     <link rel="stylesheet" href="\css\kelola_user.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   </head>
   
@@ -31,59 +33,50 @@
             <ul>
                 
                 <li>
-                    <img src="\assets\icon\pekerjaan.png" alt="users">
-                    <p>Pekerjaan</p>
+                    <a href="#">
+                        <img src="\assets\icon\pekerjaan.png" alt="users">
+                        <p>Pekerjaan</p>
+                    </a>
                 </li>
                 <li>
-                    <img src="\assets\icon\penyedia.png" alt="users">
-                    <p>Penyedia</p>
+                    <a href="#">
+                        <img src="\assets\icon\penyedia.png" alt="users">
+                        <p>Penyedia</p>
+                    </a>
                 </li>
                 <li>
-                    <img src="\assets\icon\tenaga_ahli.png" alt="users">
-                    <p>Tenaga Ahli</p>
+                    <a href="#">
+                        <img src="\assets\icon\tenaga_ahli.png" alt="users">
+                        <p>Tenaga Ahli</p>
+                    </a>
                 </li>
                 <li>
-                    <img src="\assets\icon\kelola_user.png" alt="users">
-                    <p>Kelola User</p>
+                    <a href="#">
+                        <img src="\assets\icon\kelola_user.png" alt="users">
+                        <p>Kelola User</p>
+                    </a>
                 </li>
             </ul>
           </nav>
         </div>
 
         <div class="content">
-            <table>
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Username</th>
-                        <th>Nama</th>
-                        <th>Role</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>admin@bpjb.com</td>
-                        <td>Super Admin</td>
-                        <td>Super Admin</td>
-                        <td>
-                            <button class="edit">✏️</button>
-                            <button class="delete">🗑️</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>admindiskominfo</td>
-                        <td>Admin Diskominfo</td>
-                        <td>Admin OPD</td>
-                        <td>
-                            <button class="edit">✏️</button>
-                            <button class="delete">🗑️</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="title">
+                <img src="\assets\icon\kelola_user.png" alt="users">
+                <p>Kelola User</p>
+            </div>
+            <div class="option">
+                <div class="tambah">
+                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <p>Tambah</p>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="search-box" name="q" placeholder="Cari">
+                </div>
+                
+            </div>
+            
         </div>
   </section>
 </html>
