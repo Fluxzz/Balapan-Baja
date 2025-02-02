@@ -26,36 +26,45 @@ header {
     height: 200%;
 }
 .content {
-    padding: 70px 900px 727px 60px;
-    text-align: left;
+    padding: 70px 800px 727px 70px;
+    color: white;
     z-index: 0;
     background: linear-gradient(to right, #002147, #004aad, rgba(255, 255, 255, 0));
 }
-    
+ .content h1{
+    font-size: 60px;
+ }
+ .content p{
+    font-size: 25px;
+ }
+ .content pre{
+    font-size: 20px;
+ }
 .login-btn {
     background: red;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: white;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 40px;
 }
 .partners {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 60px;
     background: rgb(255, 255, 255);
     border-radius: 25px;
     margin: 200px 100px 0px 100px;
     box-shadow: 5px 5px 10px rgba(70, 59, 59, 0.3), -5px -5px 10px rgba(93, 78, 78, 0.3);
-    transform: translatey(110px);
+    transform: translatey(105px);
 }
 .partners img {
     max-width: 100%;
     height: 70px;
 }
 .information {
+    font-family: Arial, sans-serif;
     text-align: center;
     padding: 40px 20px;
     background: rgb(255, 255, 255);
@@ -64,6 +73,7 @@ header {
     box-shadow: 5px 5px 10px rgba(70, 59, 59, 0.3), -5px -5px 10px rgba(93, 78, 78, 0.3);
 }
 #toggle-info {
+    font-family: Arial, sans-serif;
     background: #004aad;
     color: white;
     border: none;
@@ -75,6 +85,10 @@ header {
     transition: transform 0.3s ease;
 }
 
+#info-content{
+    text-align: left;
+}
+
 #toggle-info:hover {
     background: #002147;
 }
@@ -83,26 +97,37 @@ header {
     transform: rotate(180deg);
 }
 footer {
+    font-family: Arial, sans-serif;
     background: #002147;
     color: white;
-    padding: 100px 60px 500px 60px;
+    padding: 50px 60px 450px 60px;
     border-radius: 30px 30px 0px 0px
 }
 .left-column {
-    display: flex;
     width: 45%;
     float: left;
-    padding: 5px;
+    padding-left: 25px;
     background: #002147;
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif
 }
+.logo1{
+    max-width: 100%;
+    height: 40px;
+}
+.logo2{
+    max-width: 100%;
+    height: 50px;
+}
+.logo3{
+    max-width: 100%;
+    height: 40px;
+}
+
 .right-column {
-    display: flex;
     width: 45%;
     float: right;
-    padding: 5px;
+    padding-right: 25px;
+    padding-left: 10px;
     background: #002147;
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif
 }
