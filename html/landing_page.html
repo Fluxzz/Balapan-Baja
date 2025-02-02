@@ -14,9 +14,7 @@
         </div>
     </header>
     <section class="hero">
-        <div class="overlay">
-            <img src="" alt="">
-        </div>
+        <div class="overlay"></div>
         <div class="content">
             <h1>BALAPAN BAJA</h1>
             <h3>Badan Layanan Pengadaan Barang dan Jasa...</h3>
@@ -32,14 +30,61 @@
         </div>
     </section>
     <section class="information">
-        <h2>Lampiran II Peraturan Lembaga</h2>
-        <p>KEBIJAKAN PENGADAAN BARANG/JASA PEMERINTAH NOMOR 12 TAHUN 2021</p>
-    </section>
+        <h2 id="info-title">LAMPIRAN II PERATURAN LEMBAGA</h2>
+        <pre id="info-content">KEBIJAKAN PENGADAAN BARANG/JASA PEMERINTAH NOMOR 12 TAHUN 2021 PEDOMAN PELAKSANAAN PENGADAAN JASA KONSTRUKSI MELALUI PENYEDIA
+            3.4.2 Syarat Kualifikasi Teknis Penyedia
+            a. Pekerjaan Konstruksi
+            (1) Badan Usaha Persyaratan Kualifikasi Teknis, meliputi:
+            Memperhitungkan Sisa Kemampuan Paket (SKP), dengan ketentuan:
+            SKP = KP – P
+        </pre>
+        <button id="toggle-info">⮞</button>
+    </section>        
     <footer>
         <div class="footer-content">
-            <p>Bagian Pengadaan Barang dan Jasa Pemerintah Kota Semarang</p>
-            <p>Alamat: Jl. Pemuda No. 148, Sekayu, Kota Semarang</p>
+            <div class="left-column">
+            <pre>Bagian Pengadaan Barang dan Jasa Pemerintah Kota Semarang
+                <br>Tentang Kami<br>BALAPAN BAJA merupakan portal<br>pengadaan yang berfungsi sebagai media<br>berbagi informasi Sisa Kemampuan Paket<br>(SKP) Penyedia, dimana informasi ini sangat<br>dibutuhkan Pejabat Pengadaan maupun<br>Pokja Pemilihan sebelum menetapkan<br>pelaksanaan pekerjaan konstruksi.
+            </pre>
+            </div>
+            <div class="right-column">
+            <pre>Alamat Kami
+                <br>Jl. Pemuda No. 148, Sekayu, Kec. Semarang<br>Tengah, Kota Semarang, Jawa Tengah 50132</pre>
+            </div>
         </div>
     </footer>
 </body>
+<script>
+    document.getElementById("toggle-info").addEventListener("click", function() {
+        var title = document.getElementById("info-title");
+        var content = document.getElementById("info-content");
+        var button = document.getElementById("toggle-info");
+
+        if (content.innerHTML.includes("3.4.2 Syarat Kualifikasi Teknis Penyedia")) {
+            content.innerHTML = `
+                KEBIJAKAN PENGADAAN BARANG/JASA PEMERINTAH <br>
+                NOMOR 12 TAHUN 2021 <br>
+                Sisa Kemampuan Paket (SKP) adalah batas maksimal jumlah pekerjaan yang boleh dilakukan oleh penyedia pekerjaan konstruksi dalam waktu yang bersamaan dengan penandatanganan kontrak pengadaan. <br>
+                <strong>KP = nilai Kemampuan Paket</strong>, dengan ketentuan: <br>
+                (1) Untuk Usaha Kecil, nilai Kemampuan Paket (KP) ditentukan sebanyak 5 paket pekerjaan; dan <br>
+                (2) Untuk Usaha Non Kecil, nilai Kemampuan Paket (KP) ditentukan sebanyak 6 atau 1,2 N. <br>
+                P = jumlah paket yang sedang dikerjakan <br>
+                N = jumlah paket pekerjaan terbanyak yang dapat ditangani pada saat bersamaan selama kurun waktu 5 tahun terakhir
+            `;
+        } else {
+            content.innerHTML = `
+                KEBIJAKAN PENGADAAN BARANG/JASA PEMERINTAH <br>
+                NOMOR 12 TAHUN 2021 <br>
+                PEDOMAN PELAKSANAAN PENGADAAN JASA KONSTRUKSI MELALUI PENYEDIA <br>
+                <strong>3.4.2 Syarat Kualifikasi Teknis Penyedia</strong> <br>
+                a. Pekerjaan Konstruksi <br>
+                1) Badan Usaha Persyaratan Kualifikasi Teknis, meliputi: <br>
+                Memperhitungkan Sisa Kemampuan Paket (SKP), dengan ketentuan: <br>
+                <strong>SKP = KP – P</strong>
+            `;
+        }
+
+        button.classList.toggle("rotated");
+    });
+</script>
 </html>
