@@ -10,15 +10,19 @@
 <body>
     <header>
         <div class="logo">
-            <img src="\assets\logo_balapanbaja.png" alt="Logo">
+            <img src="\assets\logo_balapanbaja.png" alt="Logo" class="logo1"> <img src="\assets\semarangsemakinhebat.png" alt="Logo" class="logo2"> <img src="\assets\simpul.png" alt="Logo" class="logo3">
         </div>
     </header>
     <section class="hero">
         <div class="overlay"></div>
         <div class="content">
             <h1>BALAPAN BAJA</h1>
-            <h3>Badan Layanan Pengadaan Barang dan Jasa...</h3>
-            <p>vbivuevdeivueeveuirvuebvuerv</p>
+            <p>Badan Layanan Pengadaan Barang dan Jasa</p>
+            <pre>Merupakan portal pengadaan yang berfungsi sebagai
+media berbagi informasi Sisa Kemampuan Paket (SKP) 
+Penyedia, dimana informasi ini sangat dibutuhkan 
+Pejabat Pengadaan maupun Pokja Pemilihan sebelum
+menetapkan pelaksanaan pekerjaan konstruksi.</pre>
             <button class="login-btn">Login</button>
         </div>
     </section>
@@ -30,28 +34,33 @@
         </div>
     </section>
     <section class="information">
-        <h2 id="info-title">LAMPIRAN II PERATURAN LEMBAGA</h2>
-        <pre id="info-content">KEBIJAKAN PENGADAAN BARANG/JASA PEMERINTAH NOMOR 12 TAHUN 2021 PEDOMAN PELAKSANAAN PENGADAAN JASA KONSTRUKSI MELALUI PENYEDIA
-            3.4.2 Syarat Kualifikasi Teknis Penyedia
-            a. Pekerjaan Konstruksi
-            (1) Badan Usaha Persyaratan Kualifikasi Teknis, meliputi:
-            Memperhitungkan Sisa Kemampuan Paket (SKP), dengan ketentuan:
-            SKP = KP – P
+        <h2 id="info-title">LAMPIRAN II PERATURAN LEMBAGA<br>KEBIJAKAN PENGADAAN BARANG/JASA PEMERINTAH<br>NOMOR 12 TAHUN 2021 </h2>
+        <pre id="info-content">
+        
+                PEDOMAN PELAKSANAAN PENGADAAN JASA KONSTRUKSI MELALUI PENYEDIA <br>
+                3.4.2 Syarat Kualifikasi Teknis Penyedia<br>
+                    a. Pekerjaan Konstruksi <br>
+                        1) Badan Usaha Persyaratan Kualifikasi Teknis, meliputi: <br>
+                            Memperhitungkan Sisa Kemampuan Paket (SKP), dengan ketentuan: <br>
+                            <strong>SKP = KP – P</strong>
         </pre>
         <button id="toggle-info">⮞</button>
     </section>        
     <footer>
         <div class="footer-content">
             <div class="left-column">
-            <pre>Bagian Pengadaan Barang dan Jasa Pemerintah Kota Semarang
-                <br>Tentang Kami<br>BALAPAN BAJA merupakan portal<br>pengadaan yang berfungsi sebagai media<br>berbagi informasi Sisa Kemampuan Paket<br>(SKP) Penyedia, dimana informasi ini sangat<br>dibutuhkan Pejabat Pengadaan maupun<br>Pokja Pemilihan sebelum menetapkan<br>pelaksanaan pekerjaan konstruksi.
+            <img src="\assets\logo_balapanbaja.png" alt="Logo" class="logo1"> <img src="\assets\semarangsemakinhebat.png" alt="Logo" class="logo2"> <img src="\assets\simpul.png" alt="Logo" class="logo3">
+            <pre><b>Bagian Pengadaan Barang dan Jasa 
+Pemerintah Kota Semarang</b>
+                <br><b>Tentang Kami</b><br>BALAPAN BAJA merupakan portal<br>pengadaan yang berfungsi sebagai media<br>berbagi informasi Sisa Kemampuan Paket<br>(SKP) Penyedia, dimana informasi ini sangat<br>dibutuhkan Pejabat Pengadaan maupun<br>Pokja Pemilihan sebelum menetapkan<br>pelaksanaan pekerjaan konstruksi.
             </pre>
             </div>
             <div class="right-column">
-            <pre>Alamat Kami
+            <pre><b>Alamat Kami</b>
                 <br>Jl. Pemuda No. 148, Sekayu, Kec. Semarang<br>Tengah, Kota Semarang, Jawa Tengah 50132</pre>
-            </div>
-        </div>
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.21915881931!2d110.41105197537273!3d-6.983443618388085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4fd277d06b%3A0x4056bfa9e8303c06!2sDinas%20Kominfo%20Kota%20Semarang!5e0!3m2!1sid!2sus!4v1738511556833!5m2!1sid!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
     </footer>
 </body>
 <script>
@@ -62,25 +71,23 @@
 
         if (content.innerHTML.includes("3.4.2 Syarat Kualifikasi Teknis Penyedia")) {
             content.innerHTML = `
-                KEBIJAKAN PENGADAAN BARANG/JASA PEMERINTAH <br>
-                NOMOR 12 TAHUN 2021 <br>
-                Sisa Kemampuan Paket (SKP) adalah batas maksimal jumlah pekerjaan yang boleh dilakukan oleh penyedia pekerjaan konstruksi dalam waktu yang bersamaan dengan penandatanganan kontrak pengadaan. <br>
+                Sisa Kemampuan Paket (SKP) adalah batas maksimal jumlah pekerjaan yang boleh dilakukan<br>
+                oleh penyedia pekerjaan konstruksi dalam waktu yang bersamaan dengan penandatanganan<br>
+                kontrak pengadaan.<br>
                 <strong>KP = nilai Kemampuan Paket</strong>, dengan ketentuan: <br>
                 (1) Untuk Usaha Kecil, nilai Kemampuan Paket (KP) ditentukan sebanyak 5 paket pekerjaan; dan <br>
                 (2) Untuk Usaha Non Kecil, nilai Kemampuan Paket (KP) ditentukan sebanyak 6 atau 1,2 N. <br>
-                P = jumlah paket yang sedang dikerjakan <br>
-                N = jumlah paket pekerjaan terbanyak yang dapat ditangani pada saat bersamaan selama kurun waktu 5 tahun terakhir
+                    P = jumlah paket yang sedang dikerjakan <br>
+                    N = jumlah paket pekerjaan terbanyak yang dapat ditangani pada saat bersamaan selama kurun waktu 5 tahun terakhir
             `;
         } else {
             content.innerHTML = `
-                KEBIJAKAN PENGADAAN BARANG/JASA PEMERINTAH <br>
-                NOMOR 12 TAHUN 2021 <br>
                 PEDOMAN PELAKSANAAN PENGADAAN JASA KONSTRUKSI MELALUI PENYEDIA <br>
-                <strong>3.4.2 Syarat Kualifikasi Teknis Penyedia</strong> <br>
-                a. Pekerjaan Konstruksi <br>
-                1) Badan Usaha Persyaratan Kualifikasi Teknis, meliputi: <br>
-                Memperhitungkan Sisa Kemampuan Paket (SKP), dengan ketentuan: <br>
-                <strong>SKP = KP – P</strong>
+                3.4.2 Syarat Kualifikasi Teknis Penyedia<br>
+                      a. Pekerjaan Konstruksi <br>
+                         1) Badan Usaha Persyaratan Kualifikasi Teknis, meliputi: <br>
+                            Memperhitungkan Sisa Kemampuan Paket (SKP), dengan ketentuan: <br>
+                            <strong>SKP = KP – P</strong>
             `;
         }
 
