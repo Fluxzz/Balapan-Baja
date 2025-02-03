@@ -82,3 +82,78 @@
     width: 20%;
     margin: 0 30px 0 0;
   }
+
+  .content {
+    background-color: whitesmoke;
+    max-width: 100%;
+    width: 85%;
+  }
+  
+  .title {
+    display: flex;
+    max-width: 100%;
+    width: 20%;
+    margin: 20px 10px 10px 40px;
+    align-items: center;
+  }
+  
+  .title p {
+    margin: 0 0 0 -20px;
+  }
+  
+  .option {
+    margin: 40px 10px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .tambah{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+  }
+  
+  .option button {
+    background-color: rgb(230, 0, 0);
+    border-radius: 50%;
+    color: white;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    padding: 15px 15px;
+    margin: 10px;
+  }
+  
+  .option button:hover{
+  background-color: rgba(255, 0, 0, 0.788);
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ccc; /* Warna border bawah */
+    padding: 5px;
+    width: 200px; /* Sesuaikan dengan kebutuhan */
+    margin-right: 50px;
+  }
+  
+  .search i {
+    color: #aaa; /* Warna ikon */
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  
+  .search-box {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #666;
+    width: 100%;
+    background: transparent; /* Menghilangkan background */
+  
+  }
+  
+  .search-box::placeholder {
+    color: #aaa; /* Warna placeholder */
+  }
