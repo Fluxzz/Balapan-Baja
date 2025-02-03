@@ -114,7 +114,7 @@
     font-weight: 900;
   }
   
-  .option button {
+  .option .button-tambah {
     background-color: rgb(230, 0, 0);
     border-radius: 50%;
     color: white;
@@ -125,7 +125,7 @@
     margin: 10px;
   }
   
-  .option button:hover{
+  .option .button-tambah:hover{
   background-color: rgba(255, 0, 0, 0.788);
   }
   
@@ -157,3 +157,60 @@
   .search-box::placeholder {
     color: #aaa; /* Warna placeholder */
   }
+
+  table {
+    max-width: 100%;
+    width: 90%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: yellow;
+    font-weight: bold;
+}
+
+/* Tombol Aksi */
+.view, .edit, .delete {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Empty Rows */
+.empty-row {
+    height: 40px;
+    background: #f8f8f8;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pagination button {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.pagination span {
+    font-weight: bold;
+    font-size: 16px;
+}
