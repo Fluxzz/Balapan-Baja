@@ -99,6 +99,8 @@ img {
 
 .title p {
   margin: 0 0 0 -20px;
+  font-size: larger;
+  font-weight: bold;
 }
 
 .option {
