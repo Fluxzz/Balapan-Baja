@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById("popup");
-    const addButton = document.getElementById("open-popup");
+    const popupContainer = document.querySelector(".popup-container"); // Pilih popup-container, bukan #popup
+    const addButton = document.querySelector(".button-tambah"); 
     const closeButton = document.getElementById("close-popup");
 
     // Tampilkan popup saat tombol tambah diklik
     addButton.addEventListener("click", function () {
-        popup.style.display = "flex";
+      popupContainer.style.display = "flex"; // Ubah ke flex agar muncul
     });
 
     // Sembunyikan popup saat tombol kembali diklik
     closeButton.addEventListener("click", function () {
-        popup.style.display = "none";
+      popupContainer.style.display = "none";
     });
 });
