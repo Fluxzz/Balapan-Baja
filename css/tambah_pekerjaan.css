@@ -120,8 +120,8 @@
 }
 form input {
     width: 40%;
-    padding: px;
-    margin-top: 5px;
+    padding: 0px;
+    margin-top:2px;
     border: none;
     border-bottom: 1px solid black;
 }
