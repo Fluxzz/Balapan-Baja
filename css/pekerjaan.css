@@ -10,7 +10,7 @@
     background-color: #0846a9;
     max-width: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
   }
   .header img {
     max-width: 100%;
@@ -19,10 +19,10 @@
   .header .log_out {
     max-width: 100%;
     width: 10%;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 8px;
   }
   .accses {
-    flex-basis: 25%;
+    flex-basis: 27%;
     display: flex;
     align-items: center;
     color: white;
@@ -35,7 +35,7 @@
   }
   .sidebar {
     max-width: 100%;
-    width: 15%;
+    width: 17%;
     background: white;
     color: black;
     display: flex;
@@ -170,3 +170,62 @@
     color: #aaa; /* Warna placeholder */
   }
   
+  table {
+    max-width: 100%;
+    width: 90%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background: yellow;
+    font-weight: bold;
+  }
+  
+  /* Tombol Aksi */
+  .view,
+  .edit,
+  .delete {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Empty Rows */
+  .empty-row {
+    height: 40px;
+    background: #f8f8f8;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .pagination button {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .pagination span {
+    font-weight: bold;
+    font-size: 16px;
+  }
