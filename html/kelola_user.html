@@ -61,34 +61,104 @@
         </div>
 
         <div class="content">
+            
             <div class="title">
                 <img src="\assets\icon\kelola_user.png" alt="users">
                 <p>Kelola User</p>
             </div>
+
             <div class="option">
                 <div class="tambah">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" id="tambah-btn"><i class="fa-solid fa-plus"></i></button>
                     <p>Tambah</p>
                 </div>
                 <div class="search">
                     <i class="fas fa-search"></i>
                     <input type="text" class="search-box" name="q" placeholder="Cari">
                 </div>
-                
             </div>
+
             <div class="tabel">
+
                 <table>
                     <thead>
                         <tr>
-                            <th>nomor</th>
+                            <th>No</th>
+                            <th>Username</th>
+                            <th>Nama</th>
+                            <th>Role</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-
+                        <tr>
+                            <td>1</td>
+                            <td>admin@bpbj.com</td>
+                            <td>Super Admin</td>
+                            <td>Super Admin</td>
+                            <td>
+                                <button class="action-button">✏️</button>
+                                <button class="action-button">📋</button>
+                                <button class="action-button">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr class="gray-row">
+                            <td>2</td>
+                            <td>admindiskominfo</td>
+                            <td>Admin Diskominfo</td>
+                            <td>Admin OPD</td>
+                            <td>
+                                <button class="action-button">✏️</button>
+                                <button class="action-button">📋</button>
+                                <button class="action-button">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>admin@bpbj.com</td>
+                            <td>Super Admin</td>
+                            <td>Super Admin</td>
+                            <td>
+                                <button class="action-button">✏️</button>
+                                <button class="action-button">📋</button>
+                                <button class="action-button">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr class="gray-row">
+                            <td>4</td>
+                            <td>admindiskominfo</td>
+                            <td>Admin Diskominfo</td>
+                            <td>Admin OPD</td>
+                            <td>
+                                <button class="action-button">✏️</button>
+                                <button class="action-button">📋</button>
+                                <button class="action-button">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>admin@bpbj.com</td>
+                            <td>Super Admin</td>
+                            <td>Super Admin</td>
+                            <td>
+                                <button class="action-button">✏️</button>
+                                <button class="action-button">📋</button>
+                                <button class="action-button">🗑️</button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
+
             </div>
-            
+
+                <div class="pagination">
+                    <div class="slide-btn">
+                        <button type="button" id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <p>1</p>
+                        <button type="button" id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
         </div>
   </section>
 </html>

@@ -1,15 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById("popup");
-    const addButton = document.getElementById("open-popup");
-    const closeButton = document.getElementById("close-popup");
+  console.log("JavaScript berhasil dimuat!"); // Debugging: Cek apakah script berjalan
 
-    // Tampilkan popup saat tombol tambah diklik
-    addButton.addEventListener("click", function () {
-        popup.style.display = "flex";
-    });
+  const popupContainer = document.querySelector(".popup-container"); 
+  const openPopupButton = document.getElementById("open-popup"); 
+  const closePopupButton = document.getElementById("close-popup");
 
-    // Sembunyikan popup saat tombol kembali diklik
-    closeButton.addEventListener("click", function () {
-        popup.style.display = "none";
-    });
+  if (openPopupButton) {
+      openPopupButton.addEventListener("click", function () {
+          console.log("Tombol Tambah diklik!"); // Debugging: Cek apakah event listener berjalan
+          popupContainer.style.display = "flex"; 
+      });
+  } else {
+      console.log("Tombol Tambah tidak ditemukan!"); // Debugging: Jika tombol tidak ditemukan
+  }
+
+  if (closePopupButton) {
+      closePopupButton.addEventListener("click", function () {
+          console.log("Tombol Kembali diklik!"); // Debugging: Cek apakah event listener berjalan
+          popupContainer.style.display = "none";
+      });
+  } else {
+      console.log("Tombol Kembali tidak ditemukan!"); // Debugging: Jika tombol tidak ditemukan
+  }
 });

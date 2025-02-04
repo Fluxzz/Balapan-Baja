@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kelola User</title>
-    <link rel="stylesheet" href="\css\kelola_user.css" />
+    <title>Tenaga Ahli</title>
+    <link rel="stylesheet" href="\css\tenaga-ahli.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="\js\tambah-tenaga-ahli.js"></script> <!-- Pakai defer agar script berjalan setelah DOM termuat -->
+</head>
 
-  </head>
-  
-  <header>
-        <div class="header">
-            <div class="logo">
-              <img src="\assets\logo_balapanbaja.png" alt="Logo" />
-            </div>
-            <div class="accses">
-              <span>Akses Terakhir 15:30:44 23 Januari 2025 </span>
-              <img src="\assets\icon\log_out.png" alt="users" class="log_out">
-            </div>
+<body>
+
+<header>
+    <div class="header">
+        <div class="logo">
+            <img src="\assets\logo_balapanbaja.png" alt="Logo" />
         </div>
-  </header>
+        <div class="accses">
+            <span>Akses Terakhir 15:30:44 23 Januari 2025 </span>
+            <img src="\assets\icon\log_out.png" alt="users" class="log_out">
+        </div>
+    </div>
+</header>
 
-  <section>
-        <div class="sidebar">
-          <div class="profile">
+<section>
+    <div class="sidebar">
+        <div class="profile">
             <img src="\assets\profil.png" alt="Admin"/>
             <span>Username</span>
-          </div>
-          
-          <nav>
+        </div>
+
+        <nav>
             <ul>
-                
                 <li>
                     <a href="\html\pekerjaan.html">
                         <img src="\assets\icon\pekerjaan.png" alt="users">
@@ -39,7 +40,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="\html\tambah_penyedia.html">
+                    <a href="\html\penyedia.html">
                         <img src="\assets\icon\penyedia.png" alt="users">
                         <p>Penyedia</p>
                     </a>
@@ -57,5 +58,103 @@
                     </a>
                 </li>
             </ul>
-          </nav>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="title">
+            <img src="\assets\icon\tenaga_ahli.png" alt="users">
+            <p>Tenaga Ahli</p>
         </div>
+
+        <div class="option">
+            <div class="tambah">
+                <button class="add-btn" id="open-popup">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <p>Tambah</p>
+            </div>
+            <div class="search">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search-box" name="q" placeholder="Cari">
+            </div>
+        </div>
+
+        <div class="tabel">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>NPWM</th>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>SKP</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>admin@bpbj.com</td>
+                        <td>Super Admin</td>
+                        <td>Super Admin</td>
+                        <td>Super Admin</td>
+                        <td>
+                            <button class="action-button">✏️</button>
+                            <button class="action-button">📋</button>
+                            <button class="action-button">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <div class="slide-btn">
+                <button type="button" id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <p>1</p>
+                <button type="button" id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-container" style="display: none;">
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h2><img src="\assets\icon\penyedia.png" alt="Penyedia"> Tambah Penyedia</h2>
+                </div>
+                <form>
+                    <div class="input-group">
+                        <label>NPWP Penyedia</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="input-group">
+                        <label>Nama Penyedia</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="input-group">
+                        <label>Alamat Penyedia</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="input-group">
+                        <label>SKP</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="popup-buttons">
+                        <button type="button" id="close-popup">⬅ Kembali</button>
+                        <button type="submit" class="save-btn">💾 Simpan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
