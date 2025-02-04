@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    width: 100px;
+    font-size: 14px;
+  }
+  
+  textarea,
+  input,
+  select {
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  textarea {
+    height: 50px;
+    resize: none;
+  }
+  
+  input::placeholder {
+    color: gray;
+  }
+  
+  .short-input {
+    width: 80px;
+    text-align: center;
+  }
+  
+  .input-group span {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  button.btn-red {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button.btn-red.btn-tambah {
+    width: 100px;
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+  
+  p.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  

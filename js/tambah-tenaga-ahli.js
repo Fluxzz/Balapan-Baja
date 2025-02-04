@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("JavaScript berhasil dimuat!"); // Debugging: Cek apakah script berjalan
 
-  const popupContainer = document.querySelector(".popup-container"); 
+  const popupContainer = document.querySelector(".tenaga-ahli-container"); 
   const openPopupButton = document.getElementById("open-popup"); 
   const closePopupButton = document.getElementById("close-popup");
 

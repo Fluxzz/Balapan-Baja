@@ -244,7 +244,7 @@
     font-weight: bold;
   }
   
-  .popup-container {
+  .tenaga-ahli-container {
     display: none; /* Mulai tersembunyi */
     position: fixed;
     top: 0;
@@ -269,21 +269,16 @@
   
   .popup-header{
     display: flex;
+    align-items: center;
     max-width: 100%;
     width: 100%;
-    align-items: center;
     margin-bottom: 30px;
     border-bottom: 2px solid black;
+    padding: 10px;
   }
   
   .popup-header img{
     width: 8%;
-    margin: 10px 20px 10px 30px;
-  }
-  
-  .popup-header span{
-    font-size: larger;
-    font-weight: 800;
   }
   
   .popup-content form {
