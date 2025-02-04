@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .header {
     display: flex;
@@ -35,14 +36,14 @@
   }
   .sidebar {
     max-width: 100%;
-    width: 16%;
+    width: 20%;
     background: white;
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    padding: 15px;
+    padding: 15px 0px 0 0;
   }
   .profile {
     display: flex;
@@ -51,7 +52,7 @@
   }
   .profile img {
     max-width: 100%;
-    width: 80%;
+    width: 70%;
     border-radius: 50%;
     margin: 0 0 20px 0;
   }
@@ -88,7 +89,7 @@
   .content {
     background-color: whitesmoke;
     max-width: 100%;
-    width: 100%;
+    width: 80%;
   }
   .content h3 img{
     max-width: 100%;
@@ -118,7 +119,7 @@
   
   .input-group {
     display: flex;
-    align-items: center;
+    align-items:baseline;
     margin-bottom: 5px;
   }
   
@@ -129,7 +130,10 @@
     padding-right: 20px;
   }
   
-  textarea,
+  textarea{
+    padding: 5px 0 0 60px;
+    border: solid #ccc;
+  }
   input,
   select {
     padding: 5px;
@@ -173,13 +177,17 @@
     border-radius: 15px;
     cursor: pointer;
     font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   
   button.btn-red.btn-tambah {
-    width: 100px;
+    width: 90px;
     align-self:center;
     margin-top: -30px;
-    margin-left: 40px;
+    margin-left: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   
   p.error-message {
