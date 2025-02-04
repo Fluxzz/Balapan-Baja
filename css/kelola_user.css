@@ -15,7 +15,7 @@
 }
 .header img {
   max-width: 100%;
-  width: 70%;
+  width: 100%;
 }
 .header .log_out {
   max-width: 100%;
@@ -62,7 +62,7 @@ section {
   margin: 0 0 20px 0;
 }
 nav ul {
-  font-weight: bolder;
+  font-weight: 600;
   font-size: larger;
   list-style: none;
   padding: 0;
@@ -87,8 +87,8 @@ li:hover {
 
 .title img {
   max-width: 100%;
-  width: 15%;
-  margin: 0 30px 0 0;
+  width: 11%;
+  margin: 0 30px 0 30px;
 }
 
 .content {
@@ -111,7 +111,7 @@ li:hover {
 }
 
 .option {
-  margin: 40px 10px 10px 40px;
+  margin: 20px 10px 10px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,7 +120,7 @@ li:hover {
 .tambah {
   display: flex;
   align-items: center;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .option button {
@@ -244,3 +244,113 @@ th {
   font-weight: bold;
 }
 
+.kelola-user-container {
+  display: none; /* Mulai tersembunyi */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup{
+  display: flex;
+  justify-content: center;
+}
+.popup-content {
+  background: white;
+  width: 80%; /* Diperkecil */
+  border-radius: 30px; /* Sudut membulat */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-header{
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+}
+
+.popup-header img{
+  width: 5%;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.popup-content label {
+  font-size: 17px;
+  display: inline-block;
+  width: 180px; /* Lebar label supaya rata kiri */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  flex: 1; /* Supaya input mengikuti panjang yang tersisa */
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* CHECKBOX STYLE */
+.input-group input[type="checkbox"] {
+  width: 16px; /* Ukuran checkbox kecil */
+  height: 16px;
+}
+
+.input-group select {
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+  }
+
+
+/* BUTTON STYLE */
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+.popup-buttons button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#close-popup {
+  background: #ddd;
+  color: black;
+}
+
+.save-btn {
+  background: #0047ab;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #003590;
+}
