@@ -1,176 +1,194 @@
 * {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0846a9;
-    max-width: 100%;
-    width: 100%;
-    padding: 10px 10px 10px 20px;
-  }
-  .header img {
-    max-width: 100%;
-    width: 70%;
-  }
-  .header .log_out {
-    max-width: 100%;
-    width: 10%;
-    margin: 0 0 0 8px;
-  }
-  .accses {
-    flex-basis: 27%;
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-  section {
-    display: flex;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .sidebar {
-    max-width: 100%;
-    width: 17%;
-    background: white;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    padding: 15px 0 0 0;
-  }
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .profile img {
-    max-width: 100%;
-    width: 80%;
-    border-radius: 50%;
-    margin: 0 0 20px 0;
-  }
-  nav ul {
-    font-weight: bolder;
-    font-size: larger;
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    margin: 30px 0 0 0;
-  }
-  
-  nav ul li a {
-    padding: 15px;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-  }
-  
-  li:hover {
-    background-color: rgb(210, 202, 202);
-  }
-  
-  img {
-    max-width: 100%;
-    width: 20%;
-    margin: 0 30px 0 0;
-  }
-  
-  .content {
-    background: url('/assets/Semarang\ City\ Hall.jpg') no-repeat center center/cover;
-    max-width: 100%;
-    width: 85%;
-    height: 600px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 25px;
-    
-    }
-.content img {
-    padding-left: 40px;
-    max-width: 100%;
-    width: 40%;
-    }
-  
-  .title {
-    display: flex;
-    max-width: 100%;
-    width: 20%;
-    margin: 20px 10px 10px 40px;
-    align-items: center;
-  }
-  
-  .title p {
-    margin: 0 0 0 -20px;
-  }
-  
-  .option {
-    margin: 40px 10px 10px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .tambah{
-    display: flex;
-    align-items: center;
-    font-weight: 900;
-  }
-  
-  .option button {
-    background-color: rgb(230, 0, 0);
-    border-radius: 50%;
-    color: white;
-    border: none;
-    display: flex;
-    cursor: pointer;
-    padding: 15px 15px;
-    margin: 10px;
-  }
-  
-  .option button:hover{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0846a9;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+}
+.header img {
+  max-width: 100%;
+  width: 70%;
+}
+.header .log_out {
+  max-width: 100%;
+  width: 10%;
+  margin: 0 0 0 8px;
+}
+.accses {
+  flex-basis: 27%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+section {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.sidebar {
+  max-width: 100%;
+  width: 17%;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 15px 0 0 0;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile img {
+  max-width: 100%;
+  width: 80%;
+  border-radius: 50%;
+  margin: 0 0 20px 0;
+}
+nav ul {
+  font-weight: bolder;
+  font-size: larger;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+nav ul li a {
+  padding: 15px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+li:hover {
+  background-color: rgb(210, 202, 202);
+}
+
+img {
+  max-width: 100%;
+  width: 20%;
+  margin: 0 30px 0 0;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 90%;
+  height: 100vh;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px); /* Blur gambar latar */
+  z-index: -1; /* Menempatkan blur di belakang konten */
+  background: url("/assets/Semarang City Hall.jpg") no-repeat center center/cover;
+}
+
+.background .content {
+  text-align: center;
+}
+
+
+.background .content img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 40%;
+}
+
+.content h1{
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+
+.title {
+  display: flex;
+  max-width: 100%;
+  width: 20%;
+  margin: 20px 10px 10px 40px;
+  align-items: center;
+}
+
+.title p {
+  margin: 0 0 0 -20px;
+}
+
+.option {
+  margin: 40px 10px 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tambah {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+}
+
+.option button {
+  background-color: rgb(230, 0, 0);
+  border-radius: 50%;
+  color: white;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  padding: 15px 15px;
+  margin: 10px;
+}
+
+.option button:hover {
   background-color: rgba(255, 0, 0, 0.788);
-  }
-  
-  .search {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #ccc; /* Warna border bawah */
-    padding: 5px;
-    width: 200px; /* Sesuaikan dengan kebutuhan */
-    margin-right: 50px;
-  }
-  
-  .search i {
-    color: #aaa; /* Warna ikon */
-    font-size: 16px;
-    margin-right: 8px;
-  }
-  
-  .search-box {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    color: #666;
-    width: 100%;
-    background: transparent; /* Menghilangkan background */
-  
-  }
-  
-  .search-box::placeholder {
-    color: #aaa; /* Warna placeholder */
-  }
-  
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #ccc; /* Warna border bawah */
+  padding: 5px;
+  width: 200px; /* Sesuaikan dengan kebutuhan */
+  margin-right: 50px;
+}
+
+.search i {
+  color: #aaa; /* Warna ikon */
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.search-box {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #666;
+  width: 100%;
+  background: transparent; /* Menghilangkan background */
+}
+
+.search-box::placeholder {
+  color: #aaa; /* Warna placeholder */
+}
