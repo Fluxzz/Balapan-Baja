@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penyedia</title>
+    <link rel="stylesheet" href="\css\detail2_penyedia.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="\assets\logo_balapanbaja.png" alt="Logo" />
+      </div>
+      <div class="accses">
+        <span>Akses Terakhir 15:30:44 23 Januari 2025 </span>
+        <img src="\assets\icon\log_out.png" alt="users" class="log_out" />
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sidebar">
+      <div class="profile">
+        <img src="\assets\profil.png" alt="Admin" />
+        <span>Username</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="\html\pekerjaan.html">
+              <img src="\assets\icon\pekerjaan.png" alt="users" />
+              <p>Pekerjaan</p>
+            </a>
+          </li>
+          <li>
+            <a href="\html\penyedia.html">
+              <img src="\assets\icon\penyedia.png" alt="users" />
+              <p>Penyedia</p>
+            </a>
+          </li>
+          <li>
+            <a href="\html\tenaga-ahli.html">
+              <img src="\assets\icon\tenaga_ahli.png" alt="users" />
+              <p>Tenaga Ahli</p>
+            </a>
+          </li>
+          <li>
+            <a href="\html\kelola_user.html">
+              <img src="\assets\icon\kelola_user.png" alt="users" />
+              <p>Kelola User</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <div class="title">
+        <img src="\assets\icon\penyedia.png" alt="users" />
+        <p>Penyedia</p>
+      </div>
+      <div class="penyedia-info">
+        <p>07123456789</p>
+        <p>Ini Nama Penyedia</p>
+        <p>Sisa Kemampuan Paket: 4</p>
+      </div>
+      <div class="input-group">
+        <label for="opd">OPD</label>
+        <select id="opd">
+            <option disabled selected>Pilih OPD</option>
+        </select>
+    </div>
+      </div>
+      <div class="tabel">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>OPD</th>
+              <th>Nama Pekerjaan</th>
+              <th>Awal dan Akhir Kontrak/ Jangka Waktu</th>
+              <th>Nilai Kontrak(Rp)</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Dinas Pendidikan</td>
+              <td>Ini Nama Pekerjaan</td>
+              <td>23 Januari 2025 - 23 Mei 2025 120 Hari</td>
+              <td>210000000</td>
+              <td>
+                <button class="view">📋</button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7" class="empty-row"></td>
+            </tr>
+            <tr>
+              <td colspan="7" class="empty-row"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagination">
+        <div class="slide-btn">
+            <button type="button" id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <p>1</p>
+            <button type="button" id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+    </section>
+    </html>
