@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelola User</title>
+    <link rel="stylesheet" href="\css\menu_penyedia.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="\assets\logo_balapanbaja.png" alt="Logo" />
+      </div>
+      <div class="accses">
+        <span>Akses Terakhir 15:30:44 23 Januari 2025 </span>
+        <img src="\assets\icon\log_out.png" alt="users" class="log_out" />
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sidebar">
+      <div class="profile">
+        <img src="\assets\profil.png" alt="Admin" />
+        <span>Username</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="\html\pekerjaan.html">
+              <img src="\assets\icon\pekerjaan.png" alt="users" />
+              <p>Pekerjaan</p>
+            </a>
+          </li>
+          <li>
+            <a href="\html\penyedia.html">
+              <img src="\assets\icon\penyedia.png" alt="users" />
+              <p>Penyedia</p>
+            </a>
+          </li>
+          <li>
+            <a href="\html\tenaga-ahli.html">
+              <img src="\assets\icon\tenaga_ahli.png" alt="users" />
+              <p>Tenaga Ahli</p>
+            </a>
+          </li>
+          <li>
+            <a href="\html\kelola_user.html">
+              <img src="\assets\icon\kelola_user.png" alt="users" />
+              <p>Kelola User</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <div class="title">
+        <img src="\assets\icon\penyedia.png" alt="users" />
+        <p>Penyedia</p>
+      </div>
+      <div class="option">
+        <div class="tambah">
+          <button type="button" class="button-tambah">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <p>Tambah</p>
+        </div>
+        <div class="search">
+          <i class="fas fa-search"></i>
+          <input type="text" class="search-box" name="q" placeholder="Cari" />
+        </div>
+      </div>
+      <div class="tabel">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>NPWP</th>
+              <th>Nama</th>
+              <th>Alamat</th>
+              <th>Jenis</th>
+              <th>SKP</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr>
+                  <td colspan="7" class="empty-row"></td>
+                </tr>
+                <tr>
+                  <td colspan="7" class="empty-row"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination">
+            <div class="slide-btn">
+                <button type="button" id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <p>1</p>
+                <button type="button" id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+    </section>
+    </html>
