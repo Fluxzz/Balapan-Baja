@@ -66,10 +66,10 @@
         </div>
         <div class="toolbar">
           <label>OPD:</label>
-          <select disabled>
+          <select>
               <option>Pilih OPD</option>
           </select>
-      </div>
+        </div>
         <div class="option">
             <div class="tambah">
                 <button type="button"><i class="fa-solid fa-plus"></i></button>
@@ -82,6 +82,13 @@
             </div>
         </div>
         
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup">
+            <p>Yakin Untuk Menghapus Data Ini?</p>
+            <button class="cancel" onclick="closePopup()">TIDAK</button>
+            <button class="confirm" onclick="deleteData()">IYA</button>
+        </div>
+
         <div class="tabel">
             <table>
               <thead>
@@ -102,7 +109,7 @@
                   <td>
                     <button class="view">🔍</button>
                     <button class="edit">✏️</button>
-                    <button id="delete-btn" class="delete">🗑️</button>
+                    <button id="delete-btn" class="delete" onclick="openPopup()">🗑️</button>
                   </td>
                 </tr>
                 <tr>
@@ -122,4 +129,20 @@
         </div>
         </div>
   </section>
+  <script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+    }
+    
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+    }
+    
+    function deleteData() {
+        alert("Data telah dihapus");
+        closePopup();
+    }
+</script>
 </html>
