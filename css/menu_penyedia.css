@@ -182,31 +182,46 @@ th {
   background: yellow;
   font-weight: bold;
 }
-
+/* Tombol Aksi */
+.action-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+  }
+  
+  .pagination {
+    margin: 40px 10px 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide-btn {
+    display: flex;  /* Menjadikan button & p satu baris */
+    align-items: center; /* Posisi vertikal sejajar */
+    gap: 10px; /* Jarak antar elemen */
+  }
 /* Empty Rows */
 .empty-row {
     height: 40px;
     background: #f8f8f8;
   }
   
-  /* Pagination */
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
   .pagination button {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 5px 10px;
+    background-color: rgb(41, 163, 234);
+    border-radius: 50%;
+    color: white;
+    border: none;
+    display: flex;
     cursor: pointer;
-    font-size: 16px;
-    margin: 0 5px;
+    padding: 8px 9px;
+    margin: 6px;
   }
   
-  .pagination span {
-    font-weight: bold;
+  .slide-btn p {
+    margin: 0;
     font-size: 16px;
+    font-weight: bold;
   }
