@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0846a9;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+  }
+  .header img {
+    max-width: 100%;
+    width: 70%;
+  }
+  .header .log_out {
+    max-width: 100%;
+    width: 10%;
+    margin: 0 0 0 8px;
+  }
+  .accses {
+    flex-basis: 27%;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  section {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar {
+    max-width: 100%;
+    width: 15%;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 15px 0 0 0;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile img {
+    max-width: 100%;
+    width: 80%;
+    border-radius: 50%;
+    margin: 0 0 20px 0;
+  }
+  nav ul {
+    font-weight: bolder;
+    font-size: larger;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  
+  nav ul li a {
+    padding: 15px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  
+  li:hover {
+    background-color: rgb(210, 202, 202);
+  }
+  
+  img {
+    max-width: 100%;
+    width: 20%;
+    margin: 0 30px 0 0;
+  }
+  
+  .content {
+    background-color: whitesmoke;
+    max-width: 100%;
+    width: 85%;
+  }
+  
+  .title {
+    display: flex;
+    max-width: 100%;
+    width: 20%;
+    margin: 20px 10px 10px 40px;
+    align-items: center;
+  }
+  
+  .title p {
+    margin: 0 0 -20px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  
+  .option {
+    margin: 40px 10px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Sejajarkan ke kanan */
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: right; /* Agar teks label sejajar kanan */
+    width: 100%;
+}
+
+.input-group select {
+    width: 200px; /* Sesuaikan dengan kebutuhan */
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+}
+
+
+/* Efek hover dan focus */
+.input-group select:hover,
+.input-group select:focus {
+    border-color: #007bff; /* Warna biru saat hover atau focus */
+}
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background: yellow;
+    font-weight: bold;
+  }
+
+  /* Tombol Aksi */
+.view {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Empty Rows */
+.empty-row {
+  height: 40px;
+  background: #f8f8f8;
+}
+
+/* Tombol Aksi */
+.action-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.pagination {
+  margin: 40px 10px 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-btn {
+  display: flex;  /* Menjadikan button & p satu baris */
+  align-items: center; /* Posisi vertikal sejajar */
+  gap: 10px; /* Jarak antar elemen */
+}
+/* Empty Rows */
+.empty-row {
+  height: 40px;
+  background: #f8f8f8;
+}
+
+.pagination button {
+  background-color: rgb(41, 163, 234);
+  border-radius: 50%;
+  color: white;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  padding: 8px 9px;
+  margin: 6px;
+}
+
+.slide-btn p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
