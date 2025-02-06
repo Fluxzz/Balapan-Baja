@@ -306,6 +306,12 @@ th {
   margin-left: 50px;
 }
 
+.input-group {
+  display: flex;
+  align-items:baseline;
+  margin-bottom: 5px;
+}
+
 .input-group input {
   flex: 1; /* Supaya input mengikuti panjang yang tersisa */
   border: none;

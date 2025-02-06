@@ -159,10 +159,8 @@
                   
                     <div class="input-group">
                       <label>Jenis</label>
-                      <select required>
-                          <option value="Kecil">-</option>
-                          <option value="Kecil">Kecil</option>
-                        <option value="Non Kecil">Non Kecil</option>
+                      <select>
+                          <option>Pilih Jenis</option>
                       </select>
                     </div>
                   
@@ -174,6 +172,54 @@
             </div>
         </div>
     </div>
+
+    <div class="popup-container">
+
+      <div id="popup" class="popup">
+
+          <div class="popup-content">
+
+              <div class="popup-header">
+                <img src="\assets\icon\penyedia.png" alt="Penyedia" />
+                <span>Tambah Penyedia</span>
+              </div>
+
+              <form>
+                  <div class="input-group">
+                    <label>NPWP Penyedia</label>
+                    <input type="text" class="short-input1" value="07123456789" readonly>
+                  </div>
+                
+                  <div class="input-group">
+                    <label>Nama Penyedia</label>
+                    <input type="text" class="short-input1" value="Ini Nama Penyedia" readonly>
+                  </div>
+                
+                  <div class="input-group">
+                    <label>Alamat Penyedia</label>
+                    <input type="text" class="short-input1" value="Ini Alamat Penyedia" readonly>
+                  </div>
+                
+                  <div class="input-group">
+                    <label>SKP</label>
+                    <input type="number" min="1" required />
+                  </div>
+                
+                  <div class="input-group">
+                    <label>Jenis</label>
+                    <select>
+                        <option>Pilih Jenis</option>
+                    </select>
+                  </div>
+                
+                  <div class="popup-buttons">
+                    <button type="button" id="close-popup">⬅ Kembali</button>
+                    <button type="submit" class="save-btn">💾 Simpan</button>
+                  </div>
+                </form>
+          </div>
+      </div>
+  </div>
 
   </section>
   <script src="\js\tambah-penyedia.js"></script>
