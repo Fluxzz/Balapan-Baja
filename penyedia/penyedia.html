@@ -102,10 +102,12 @@
               <td>Non Kecil</td>
               <td>4</td>
               <td>
-                <button class="edit-btn">✏️</button>
+                <button class="edit-btn" id="edit-btn">✏️</button>
+
                 <a href="detail1_penyedia.html">
                   <button class="detail-btn">📋</button>
                 </a>
+
                 <button
                   id="delete-btn"
                   class="delete-btn"
@@ -179,12 +181,12 @@
       </div>
     </div>
 
-    <div class="popup-container">
-      <div id="popup" class="popup">
+    <div class="edit-container">
+      <div id="edit-popup" class="edit-popup">
         <div class="popup-content">
           <div class="popup-header">
             <img src="\assets\icon\penyedia.png" alt="Penyedia" />
-            <span>Tambah Penyedia</span>
+            <span>edit Penyedia</span>
           </div>
 
           <form>
@@ -231,7 +233,7 @@
             </div>
 
             <div class="popup-buttons">
-              <button type="button" id="close-popup">⬅ Kembali</button>
+              <button type="button" id="close-edit-popup">⬅ Kembali</button>
               <button type="submit" class="save-btn">💾 Simpan</button>
             </div>
           </form>
@@ -239,7 +241,6 @@
       </div>
     </div>
 
-    <!-- Overlay -->
     <div class="delete-penyedia" id="delete-penyedia">
       <!-- Popup -->
       <div class="delete-popup">
@@ -248,8 +249,9 @@
         <button class="confirm" onclick="deleteData()">IYA</button>
       </div>
     </div>
-    
+
   </section>
   <script src="\penyedia\js\tambah-penyedia.js"></script>
+  <script src="\penyedia\js\edit-penyedia.js"></script>
   <script src="\penyedia\js\delete.js"></script>
 </html>

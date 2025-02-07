@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="\tenaga-ahli\js\tambah-tenaga-ahli.js"></script> 
     <script defer src="\tenaga-ahli\js\delete.js"></script> 
+    <script defer src="\tenaga-ahli\js\edit-ahli.js"></script> 
 </head>
 
 <body>
@@ -101,8 +102,10 @@
                         <td>Super Admin</td>
                         <td>Super Admin</td>
                         <td>
-                            <button class="edit-btn">✏️</button>
-                            <button class="detail-btn">📋</button>
+                            <button class="edit-btn" id="edit-btn">✏️</button>
+                            <a href="detail1_ahli.html">
+                                <button class="detail-btn">📋</button>
+                            </a>
                             <button id="delete-btn" class="delete-btn" onclick="openPopup()">🗑️</button>
                         </td>
                     </tr>
@@ -147,6 +150,38 @@
     
                     <div class="popup-buttons">
                         <button type="button" id="close-popup">⬅ Kembali</button>
+                        <button type="submit" class="save-btn">💾 Simpan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="edit-container">
+        <div id="edit-popup" class="edit-popup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <img src="\assets\icon\tenaga_ahli.png" alt="Penyedia"> 
+                    <span>Tambah Tenaga Ahli</span>
+                </div>
+                <form>
+                    <div class="input-group">
+                        <label>NPWP Tenaga Ahli</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="input-group">
+                        <label>Nama Tenaga Ahli</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="input-group">
+                        <label>Alamat Tenaga Ahli</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="popup-buttons">
+                        <button type="button" id="close-edit-popup">⬅ Kembali</button>
                         <button type="submit" class="save-btn">💾 Simpan</button>
                     </div>
                 </form>
