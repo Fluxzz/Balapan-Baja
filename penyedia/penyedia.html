@@ -36,32 +36,32 @@
 
       <nav>
         <ul>
-            <li>
-                <a href="\pekerjaan\pekerjaan.html">
-                    <img src="\assets\icon\pekerjaan.png" alt="users">
-                    <p>Pekerjaan</p>
-                </a>
-            </li>
-            <li>
-                <a href="\penyedia\penyedia.html">
-                    <img src="\assets\icon\penyedia.png" alt="users">
-                    <p>Penyedia</p>
-                </a>
-            </li>
-            <li>
-                <a href="\tenaga-ahli\tenaga-ahli.html">
-                    <img src="\assets\icon\tenaga_ahli.png" alt="users">
-                    <p>Tenaga Ahli</p>
-                </a>
-            </li>
-            <li>
-                <a href="\kelola-user\kelola_user.html">
-                    <img src="\assets\icon\kelola_user.png" alt="users">
-                    <p>Kelola User</p>
-                </a>
-            </li>
+          <li>
+            <a href="\pekerjaan\pekerjaan.html">
+              <img src="\assets\icon\pekerjaan.png" alt="users" />
+              <p>Pekerjaan</p>
+            </a>
+          </li>
+          <li>
+            <a href="\penyedia\penyedia.html">
+              <img src="\assets\icon\penyedia.png" alt="users" />
+              <p>Penyedia</p>
+            </a>
+          </li>
+          <li>
+            <a href="\tenaga-ahli\tenaga-ahli.html">
+              <img src="\assets\icon\tenaga_ahli.png" alt="users" />
+              <p>Tenaga Ahli</p>
+            </a>
+          </li>
+          <li>
+            <a href="\kelola-user\kelola_user.html">
+              <img src="\assets\icon\kelola_user.png" alt="users" />
+              <p>Kelola User</p>
+            </a>
+          </li>
         </ul>
-    </nav>
+      </nav>
     </div>
     <div class="content">
       <div class="title">
@@ -104,7 +104,13 @@
               <td>
                 <button class="edit-btn">✏️</button>
                 <button class="detail-btn">📋</button>
-                <button class="delete-btn" class="delete">🗑️</button>
+                <button
+                  id="delete-btn"
+                  class="delete-btn"
+                  onclick="openPopup()"
+                >
+                  🗑️
+                </button>
               </td>
             </tr>
             <tr>
@@ -115,109 +121,133 @@
       </div>
       <div class="pagination">
         <div class="slide-btn">
-            <button type="button" id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-            <p>1</p>
-            <button type="button" id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+          <button type="button" id="prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <p>1</p>
+          <button type="button" id="next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
       </div>
     </div>
 
     <div class="popup-container">
-
-        <div id="popup" class="popup">
-
-            <div class="popup-content">
-
-                <div class="popup-header">
-                  <img src="\assets\icon\penyedia.png" alt="Penyedia" />
-                  <span>Tambah Penyedia</span>
-                </div>
-
-                <form>
-                    <div class="input-group">
-                      <label>NPWP Penyedia</label>
-                      <input type="text" required />
-                    </div>
-                  
-                    <div class="input-group">
-                      <label>Nama Penyedia</label>
-                      <input type="text" required />
-                    </div>
-                  
-                    <div class="input-group">
-                      <label>Alamat Penyedia</label>
-                      <input type="text" required />
-                    </div>
-                  
-                    <div class="input-group">
-                      <label>SKP</label>
-                      <input type="number" min="1" required />
-                    </div>
-                  
-                    <div class="input-group">
-                      <label>Jenis</label>
-                      <select>
-                          <option>Pilih Jenis</option>
-                      </select>
-                    </div>
-                  
-                    <div class="popup-buttons">
-                      <button type="button" id="close-popup">⬅ Kembali</button>
-                      <button type="submit" class="save-btn">💾 Simpan</button>
-                    </div>
-                  </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup-container">
-
       <div id="popup" class="popup">
-
-          <div class="popup-content">
-
-              <div class="popup-header">
-                <img src="\assets\icon\penyedia.png" alt="Penyedia" />
-                <span>Tambah Penyedia</span>
-              </div>
-
-              <form>
-                  <div class="input-group">
-                    <label>NPWP Penyedia</label>
-                    <input type="text" class="short-input1" value="07123456789" readonly>
-                  </div>
-                
-                  <div class="input-group">
-                    <label>Nama Penyedia</label>
-                    <input type="text" class="short-input1" value="Ini Nama Penyedia" readonly>
-                  </div>
-                
-                  <div class="input-group">
-                    <label>Alamat Penyedia</label>
-                    <input type="text" class="short-input1" value="Ini Alamat Penyedia" readonly>
-                  </div>
-                
-                  <div class="input-group">
-                    <label>SKP</label>
-                    <input type="number" min="1" required />
-                  </div>
-                
-                  <div class="input-group">
-                    <label>Jenis</label>
-                    <select>
-                        <option>Pilih Jenis</option>
-                    </select>
-                  </div>
-                
-                  <div class="popup-buttons">
-                    <button type="button" id="close-popup">⬅ Kembali</button>
-                    <button type="submit" class="save-btn">💾 Simpan</button>
-                  </div>
-                </form>
+        <div class="popup-content">
+          <div class="popup-header">
+            <img src="\assets\icon\penyedia.png" alt="Penyedia" />
+            <span>Tambah Penyedia</span>
           </div>
-      </div>
-  </div>
 
+          <form>
+            <div class="input-group">
+              <label>NPWP Penyedia</label>
+              <input type="text" required />
+            </div>
+
+            <div class="input-group">
+              <label>Nama Penyedia</label>
+              <input type="text" required />
+            </div>
+
+            <div class="input-group">
+              <label>Alamat Penyedia</label>
+              <input type="text" required />
+            </div>
+
+            <div class="input-group">
+              <label>SKP</label>
+              <input type="number" min="1" required />
+            </div>
+
+            <div class="input-group">
+              <label>Jenis</label>
+              <select>
+                <option>Pilih Jenis</option>
+              </select>
+            </div>
+
+            <div class="popup-buttons">
+              <button type="button" id="close-popup">⬅ Kembali</button>
+              <button type="submit" class="save-btn">💾 Simpan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-container">
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <div class="popup-header">
+            <img src="\assets\icon\penyedia.png" alt="Penyedia" />
+            <span>Tambah Penyedia</span>
+          </div>
+
+          <form>
+            <div class="input-group">
+              <label>NPWP Penyedia</label>
+              <input
+                type="text"
+                class="short-input1"
+                value="07123456789"
+                readonly
+              />
+            </div>
+
+            <div class="input-group">
+              <label>Nama Penyedia</label>
+              <input
+                type="text"
+                class="short-input1"
+                value="Ini Nama Penyedia"
+                readonly
+              />
+            </div>
+
+            <div class="input-group">
+              <label>Alamat Penyedia</label>
+              <input
+                type="text"
+                class="short-input1"
+                value="Ini Alamat Penyedia"
+                readonly
+              />
+            </div>
+
+            <div class="input-group">
+              <label>SKP</label>
+              <input type="number" min="1" required />
+            </div>
+
+            <div class="input-group">
+              <label>Jenis</label>
+              <select>
+                <option>Pilih Jenis</option>
+              </select>
+            </div>
+
+            <div class="popup-buttons">
+              <button type="button" id="close-popup">⬅ Kembali</button>
+              <button type="submit" class="save-btn">💾 Simpan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="delete-penyedia" id="delete-penyedia">
+      <!-- Popup -->
+      <div class="delete-popup">
+        <p>Yakin Untuk Menghapus Data Ini?</p>
+        <button class="cancel" onclick="closePopup()">TIDAK</button>
+        <button class="confirm" onclick="deleteData()">IYA</button>
+      </div>
+    </div>
+    
   </section>
   <script src="\penyedia\js\tambah-penyedia.js"></script>
+  <script src="\penyedia\js\delete.js"></script>
 </html>

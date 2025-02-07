@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="\tenaga-ahli\css\tenaga-ahli.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script defer src="\tenaga-ahli\js\tambah-tenaga-ahli.js"></script> <!-- Pakai defer agar script berjalan setelah DOM termuat -->
+    <script defer src="\tenaga-ahli\js\tambah-tenaga-ahli.js"></script> 
+    <script defer src="\tenaga-ahli\js\delete.js"></script> 
 </head>
 
 <body>
@@ -102,7 +103,7 @@
                         <td>
                             <button class="edit-btn">✏️</button>
                             <button class="detail-btn">📋</button>
-                            <button class="delete-btn">🗑️</button>
+                            <button id="delete-btn" class="delete-btn" onclick="openPopup()">🗑️</button>
                         </td>
                     </tr>
                     <tr>
@@ -152,6 +153,16 @@
             </div>
         </div>
     </div>
+
+    <!-- Overlay -->
+    <div class="delete-ahli" id="delete-ahli">
+        <!-- Popup -->
+        <div class="delete-popup">
+          <p>Yakin Untuk Menghapus Data Ini?</p>
+          <button class="cancel" onclick="closePopup()">TIDAK</button>
+          <button class="confirm" onclick="deleteData()">IYA</button>
+        </div>
+      </div>
 
 </section>
 
