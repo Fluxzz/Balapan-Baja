@@ -196,12 +196,26 @@ th {
 
 /* Baris kosong dengan warna lebih gelap */
 .empty-row {
-  height: 40px;
+  height: 30px;
   background: #dcdcdc;
 }
 
 /* Tombol Aksi */
-.action-button {
+.edit-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+.delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+.detail-btn {
   border: none;
   background: none;
   cursor: pointer;

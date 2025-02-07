@@ -36,14 +36,14 @@ section {
 }
 .sidebar {
   max-width: 100%;
-  width: 15%;
+  width: 17%;
   background: white;
   color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  padding: 15px 0 0 0;
+  padding: 15px 0px 0 0;
 }
 .profile {
   display: flex;
@@ -102,12 +102,11 @@ img {
 
 .title p {
   margin: 0 0 0 -20px;
-  font-size: larger;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .option {
-  margin: 40px 10px 10px 40px;
+  margin: 20px 10px 10px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -119,7 +118,7 @@ img {
   font-weight: 900;
 }
 
-.option .button-tambah {
+.option button {
   background-color: rgb(230, 0, 0);
   border-radius: 50%;
   color: white;
@@ -130,7 +129,7 @@ img {
   margin: 10px;
 }
 
-.option .button-tambah:hover {
+.option button:hover {
   background-color: rgba(255, 0, 0, 0.788);
 }
 
@@ -162,52 +161,68 @@ img {
   color: #aaa; /* Warna placeholder */
 }
 
-table {
+.tabel {
   max-width: 100%;
   width: 90%;
+  margin: auto;
+}
+
+table {
+  width: 100%;
   border-collapse: collapse;
   background: white;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
-  margin: auto;
+  text-align: left;
 }
 
 th,
 td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
+  padding: 12px;
+  text-align: center;
+  border-right: 2px solid whitesmoke;
 }
 
 th {
   background: yellow;
   font-weight: bold;
+  text-align: center;
 }
 
-/* Tombol Aksi */
-.view,
-.edit,
-.delete {
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 16px;
+/* Baris dengan warna abu-abu */
+.gray-row {
+  background: #f0f0f0;
 }
 
-/* Empty Rows */
+/* Baris kosong dengan warna lebih gelap */
 .empty-row {
-  height: 40px;
-  background: #f8f8f8;
+  height: 30px;
+  background: #dcdcdc;
 }
 
 /* Tombol Aksi */
-.action-button {
+.edit-btn {
   border: none;
   background: none;
   cursor: pointer;
   font-size: 18px;
   margin: 0 5px;
 }
+.delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+.detail-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
 
 .pagination {
   margin: 40px 10px 10px 40px;
@@ -220,11 +235,6 @@ th {
   display: flex;  /* Menjadikan button & p satu baris */
   align-items: center; /* Posisi vertikal sejajar */
   gap: 10px; /* Jarak antar elemen */
-}
-/* Empty Rows */
-.empty-row {
-  height: 40px;
-  background: #f8f8f8;
 }
 
 .pagination button {
@@ -270,21 +280,18 @@ th {
 
 .popup-header{
   display: flex;
+  align-items: center;
   max-width: 100%;
   width: 100%;
-  align-items: center;
   margin-bottom: 30px;
   border-bottom: 2px solid black;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: larger;
 }
 
 .popup-header img{
   width: 8%;
-  margin: 10px 20px 10px 30px;
-}
-
-.popup-header span{
-  font-size: larger;
-  font-weight: 800;
 }
 
 .popup-content form {
@@ -296,20 +303,13 @@ th {
 .popup-content label {
   font-size: 17px;
   display: inline-block;
-  width: 150px; /* Lebar label supaya rata kiri */
+  width: 180px; /* Lebar label supaya rata kiri */
 }
 
 .input-group {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  margin-left: 50px;
-}
-
-.input-group {
-  display: flex;
-  align-items:baseline;
-  margin-bottom: 5px;
 }
 
 .input-group input {
@@ -328,12 +328,12 @@ th {
 }
 
 .input-group select {
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+  }
 
 
 /* BUTTON STYLE */
