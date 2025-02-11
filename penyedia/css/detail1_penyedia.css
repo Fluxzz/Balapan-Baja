@@ -23,7 +23,7 @@
   margin: 0 0 0 8px;
 }
 .accses {
-  flex-basis: 27%;
+  flex-basis: 28%;
   display: flex;
   align-items: center;
   color: white;
@@ -36,14 +36,14 @@ section {
 }
 .sidebar {
   max-width: 100%;
-  width: 17%;
+  width: 18%;
   background: white;
   color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  padding: 15px 0px 0 0;
+  padding: 10px;
 }
 .sidebar img {
   max-width: 100%;
@@ -94,7 +94,7 @@ li:hover {
 .content {
   background-color: whitesmoke;
   max-width: 100%;
-  width: 83%;
+  width: 82%;
 }
 
 .title {
@@ -161,7 +161,7 @@ table {
 
 th,
 td {
-  padding: 12px;
+  padding: 10px;
   text-align: center;
   border-right: 2px solid whitesmoke;
 }
@@ -179,7 +179,7 @@ th {
 
 /* Baris kosong dengan warna lebih gelap */
 .empty-row {
-  height: 30px;
+  height: 20px;
   background: #dcdcdc;
 }
 
